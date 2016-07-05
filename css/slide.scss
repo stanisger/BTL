@@ -1,0 +1,145 @@
+.slider{
+	height: 400px;
+	background: $blueTitle;
+	transition: height .4s;
+	ul:nth-child(1){
+		height: 400px;
+		transition: height .4s;
+		li{
+          >img{}
+          >div{
+          	  color: #fff;
+			  position: absolute;
+			  top: 15%;
+			  left: 15%;
+			  width: 70%;
+			  opacity: 0;
+         	 top: 23%;
+          	h3{
+          		font-size: 24px;
+          		font-weight: 300;
+          		line-height: 38px;
+          		letter-spacing: 1px;
+          		transition: font-size .4s;
+          		strong{
+          			display: inline;
+          		}
+          	}
+          	h4{
+          		display: none;
+          	}
+          	.btns{
+          		margin-top: 50px;
+          	}
+          	i{
+          		font-size: 52px;
+          		margin-top: 110px;
+          		display: none;
+          		cursor: pointer;
+          		@media (min-width:1440px){
+          			display: inline-block;
+          		}
+          	}
+          }
+		}
+	}
+	.indicators{
+		bottom: 22px;
+		z-index: 2;
+		.indicator-item{
+			background: white;
+			border: 1px solid white;
+			margin: 0 6px; 
+			display: inline-block;
+			height: 16px;
+            width: 16px;
+		}
+
+	}
+	.indicators .indicator-item.active{
+		background: $orange1;
+		height: 18px;
+        width: 18px;
+        	border: 2px solid $orange1;
+	}
+	   @media (min-width:768px){
+	   	height: 600px;
+	   	ul:nth-child(1){
+	   		height: 600px;
+	   		li{
+	   			> div{
+	   				top: 36%;
+	   				h3{
+	   					font-size: 35px;
+	   					line-height: 45px;
+	   				}
+	   			}
+	   		}
+	   	}
+
+	   }
+	   @media (min-width:992px){
+	   	height: 700px;
+	   	ul:nth-child(1){
+	   		height: 700px;
+	   		li{
+	   			> div{
+	   				top: 26%;
+	   				h3{
+	   					font-size: 38px;
+	   					line-height: 50px;
+	   					font-weight: 700;
+	   				}
+	   				h4{
+	   					margin-top: 17px;
+					    display: inherit;
+					    font-size: 24px;
+					    font-weight: 200;
+					    line-height: 32px;
+
+	   				}
+	   				.btns{
+		          		margin-top: 76px;
+		          		font-size: 16px;
+   
+		          	}
+	   			}
+	   		}
+	   	}
+        .indicators{
+        	left: inherit;
+        	right: 18px;
+        	top: 40%;
+        	.indicator-item{
+        		display: block;
+        		margin: 12px;
+        	}
+        }
+	   }
+	   @media (min-width:1440px){
+	   	    height: 800px;
+	   		ul:nth-child(1){
+	   			height: 800px;
+	   		li{
+	   			> div{
+	   				 
+					  top: 36%;
+					  left: 7%;
+					  width: 87%;
+					  h3{
+	   					font-size: 45px;
+	   					line-height: 65px;
+
+	   				}
+	   				h4{
+	   				
+	   					margin-top: 30px;
+	   					display: inherit;
+	   					font-size: 28px;
+	   					line-height: 40px;
+	   				}
+	   			}
+	   		}
+	      }
+	   }
+}

@@ -1,0 +1,68 @@
+section.carrusel{
+	width: 100%;
+	position: relative;
+	.owl-carousel{
+		.owl-item{
+			width: 303px !important;
+			height: 142px;
+		}
+	} 
+
+
+	.owl-carousel .item{
+	  padding: 60px 0px;
+	 width: 303px !important;
+	  color: #FFF;
+	  height: 142px;
+	  text-align: center;
+	  @include cover;
+	  span{
+	  	// background: red;
+	  	h2{
+	  		font-size: 15px;
+	  		letter-spacing: 1px;
+	  		font-weight: 400;
+	  	}
+	  	a{
+	  		i{
+	  			color: $orange1;
+	  			font-size: 22px;
+	  		}
+	  	}
+	  }
+	}
+	.customNavigation{
+	  text-align: center;
+
+	  a:nth-child(1){
+	  	left:  0;
+	  }
+	   a:nth-child(2){
+	   	right: 0;
+	   }
+	}
+	//use styles below to disable ugly selection
+	.customNavigation a{
+		cursor: pointer;
+		padding: 10px 10px;
+		// width: 15px;
+		background: rgba($blanco, .4);
+	   position: absolute;
+	   top: 40%;
+	  -webkit-user-select: none;
+	  -khtml-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	  transition: background .4s;
+	  &:hover{
+	  	background: rgba($blanco, .8);
+	  }
+	  i{
+        font-size: 15px;
+        font-weight: 800;
+        color: $blueBg;
+	  }
+	}
+}

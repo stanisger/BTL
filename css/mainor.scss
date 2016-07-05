@@ -1,0 +1,279 @@
+.mainorTwo{
+	text-align: center;
+	width: 100%;
+	@include flexFlow;
+   
+	article{
+		width: 100%;
+	}
+	article:nth-child(1){
+        order: 1;
+       padding: 66px 0 76px;
+       @include flexFlow;
+       h1{
+       	font-size: 20px;
+       	color: $blueTitle;
+       	margin-bottom: 44px;
+       	font-weight: 500;
+       	text-align: center;
+       	width: 100%;
+       	line-height: 29px;
+       }
+       .text{
+       	  font-size: 15px;
+       	  width: 100%;
+       	  color: $black;
+       	  font-weight: 300;
+       	  margin-bottom: 50px;
+       	  padding: 0 15%;
+       	  line-height: 25px;
+       }
+            a:nth-child(3){
+              border-right: solid 1px rgba($blueTitle, .6)
+       }
+       a{
+       	color: $blueBtn;
+       	font-size: 11px;
+       	width: 50%;
+       	font-weight: 700;
+       	opacity: 1;
+       	transition: opacity .2s;
+       	p{
+       		margin: 10px 0;
+       	}
+       	img{
+       		width: 35px;
+       	}
+       	i{
+       		color: $orange1;
+          transition: margin-left .4s;
+       		font-size: 18px;
+       	}
+       	&:hover{
+       		opacity : .5;
+       	}
+
+       }
+	}
+	article:nth-child(2){
+              order: 2;
+		width: 100%;
+		height: 306px;
+		// background: url(assets/images/main.jpg);
+		@include cover;
+	}
+       @media (min-width:580px){
+             article:nth-child(1){
+              padding: 33px 0 33px;
+              order: 2;
+              width: 50%;
+              height: auto;
+              .text{
+                 margin-bottom: 23px;
+               }
+             }
+             article:nth-child(2){
+              order: 1;
+              width: 50%;
+              height: auto;
+             }
+       }
+        @media (min-width:992px){
+
+              article:nth-child(1){
+              padding: 66px 0 46px;
+              width: 45%;
+              height: auto;
+              h1{
+                margin-bottom: 44px;
+                font-size: 30px;
+                line-height: 40px;
+              }
+              .text{
+                 margin-bottom: 50px;
+                padding: 0 14%;
+                font-size: 16px;
+               }
+             }
+             article:nth-child(2){
+              width: 55%;
+              height: auto;
+             }
+       }
+        @media (min-width:1440px){
+          article:nth-child(1){
+                padding: 110px 3% 110px;
+                 h1{
+                  margin-bottom: 60px;
+                  font-size: 40px;
+                  line-height: 44px;
+                }
+
+                .text{
+                    margin-bottom: 60px;
+                    padding: 0;
+                    font-size: 19px;
+                    line-height: 32px;
+
+               }
+              a{
+                  p{
+                    display: inline;
+                    font-size: 14px;
+                    margin-right: 9px;
+                  }
+                  &:hover{
+                    i{
+                      margin-left: 9px;
+                    }
+                  }
+                }                 }
+               article:nth-child(2){
+
+               }
+       }
+
+}
+
+
+
+
+
+
+.mainor{
+       text-align: center;
+       width: 100%;
+       @include flexFlow;
+   
+       article{
+              width: 100%;
+       }
+       article:nth-child(1){
+       padding: 66px 0 76px;
+       @include flexFlow;
+       h1{
+              font-size: 20px;
+              color: $blueTitle;
+              margin-bottom: 44px;
+              font-weight: 500;
+              text-align: center;
+              width: 100%;
+              line-height: 29px;
+       }
+       .text{
+                font-size: 15px;
+                width: 100%;
+                color: $black;
+                font-weight: 300;
+                margin-bottom: 50px;
+                padding: 0 15%;
+                line-height: 25px;
+       }
+            a:nth-child(3){
+              border-right: solid 1px rgba($blueTitle, .6)
+       }
+       a{
+              color: $blueBtn;
+              font-size: 11px;
+              width: 50%;
+              font-weight: 700;
+              opacity: 1;
+              transition: opacity .2s;
+              p{
+                     margin: 10px 0;
+              }
+              img{
+                     width: 35px;
+              }
+              i{
+                     color: $orange1;
+                     font-size: 18px;
+                     transition: margin-left .6s;
+              }
+              &:hover{
+                     opacity : .5;
+              }
+
+       }
+       }
+       article:nth-child(2){
+              width: 100%;
+              height: 306px;
+              // background: url(assets/images/main.jpg);
+              @include cover;
+       }
+       @media (min-width:580px){
+             article:nth-child(1){
+              width: 45%;
+              height: auto;
+              padding: 33px 0 33px;
+              h1{
+                      margin-bottom: 22px;
+                      br{
+                            display: none;
+                      }
+              }
+              .text{
+               margin-bottom: 25px;
+             }
+             }
+             article:nth-child(2){
+              width: 55%;
+              height: auto;
+             }
+       }
+        @media (min-width:992px){
+            article:nth-child(1){
+              padding: 66px 0 46px;
+              width: 45%;
+              height: auto;
+               h1{
+                margin-bottom: 44px;
+                font-size: 30px;
+              }
+
+              .text{
+                 margin-bottom: 50px;
+                padding: 0 14%;
+                font-size: 16px;
+               }
+
+             }
+             article:nth-child(2){
+              width: 55%;
+              height: auto;
+             }
+       }
+       @media (min-width:1440px){
+          article:nth-child(1){
+                padding: 110px 3% 110px;
+                 h1{
+                  margin-bottom: 60px;
+                  font-size: 40px;
+                }
+
+                .text{
+                    margin-bottom: 60px;
+                    padding: 0;
+                    font-size: 19px;
+                    line-height: 32px;
+
+               }
+              a{
+                  p{
+                    display: inline;
+                    font-size: 14px;
+                    margin-right: 9px;
+                  }
+                  &:hover{
+                    i{
+                      margin-left: 9px;
+                    }
+                  }
+                }                 }
+               article:nth-child(2){
+
+               }
+       }
+
+}

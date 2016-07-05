@@ -1,0 +1,26 @@
+
+@import "mixins";
+@import "variables";
+// Reset
+@import "normalize";
+@import "scaffolding";
+
+// materialize
+@import "css/materialize.css"; 
+@import "css/owl.carousel.css"; 
+
+//layouts
+@import "interface";
+@import "slide";
+@import "seccionMain";
+@import "mainor";
+@import "three";
+@import "carousel";
+@import "bannerFoot";
+
+
+// @import "css/bootstrap.min.css";
+@import "css/font-awesome.min.css";
+@import "flaticon"; 
+	
+	

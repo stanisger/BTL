@@ -1,0 +1,40 @@
+.bannerFoot{
+	.content{
+	padding: 52px 0 52px;
+	@include content;
+	@include flexFlow;
+	
+	article{
+		width: 100%;
+		text-align: center;
+		h2{
+			font-size: 20px;
+			color: $blueTitle;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		.text{
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 28px;
+			padding: 0 15%;
+		}
+
+	}
+	article:nth-child(2){
+		width: 100%;
+
+		max-width: 420px;
+		margin: 30px auto 0;
+		@include flexFlow;
+		> div{
+			padding: 10px 25px;
+			width: 33.3%;
+			img{
+				width: 100%;
+			}
+		}
+
+	}
+  }
+}
