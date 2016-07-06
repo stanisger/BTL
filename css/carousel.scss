@@ -6,7 +6,7 @@ section.carrusel{
 			width: 303px !important;
 			height: 142px;
 		}
-	} 
+	}  
 
 
 	.owl-carousel .item{
@@ -65,4 +65,192 @@ section.carrusel{
         color: $blueBg;
 	  }
 	}
+	 @media (min-width:600px){
+	 	display: none;
+
+	 }
 }
+
+.cities{
+  display: none;
+  article{
+  	width: 33.33%;
+  	height: 200px;
+  	background: red;
+  	padding: 0px;
+  	transition: padding .6s;
+  	position: relative;
+    @include cover;
+    span{
+	       width: 90%;
+	       height: 20px;
+	       @include centerAbsolute;
+	       transition: all .4s;
+	       text-align: center;
+	       opacity: 1;
+		h2{
+		  font-size: 16px;
+	       color: white;
+		}
+    }		
+    > div{
+    	border: 1px solid $orange1; 
+    	height: 100%;
+    	width: 100%;
+    	opacity: 0;
+    	transition: opacity .5s;
+    	text-align: center;
+    	color: white;
+    	// padding: 60px 0 0;
+    	a{
+    		color: white;
+    		margin-top: 9px;
+    		p{
+    			font-size: 11px;
+    		}
+    		i{
+    			color: $orange1;
+    		}
+    	}
+    }
+    &:hover{
+	   padding: 18px;
+	   span{
+	   	top: -20px;
+	   	opacity: .6;
+	   }
+	   	> div{
+	   		opacity: 1;
+	   		a{
+	   			margin-top: 36px;
+	   		}
+	   	}
+	  }
+  }
+	@media (min-width:600px){
+		@include flexFlow;
+		article{
+			 span{
+		       height: 30px;
+			h2{
+			  font-size: 18px;
+		       color: white;
+			}
+	    	 }
+	    > div{
+	    	padding: 90px 0 0;
+	    }	 
+	       &:hover{
+		   padding: 22px;
+		   span{
+		   	top: -40px;
+		   }
+		   	> div{
+		   		opacity: 1;
+		   	}
+		  }
+	  }
+
+	}
+	@media (min-width:768px){
+		article{
+		height: 275px;
+		span{
+		       height: 40px;
+			h2{
+			  font-size: 20px;
+		       color: white;
+			}
+	    	 }
+	    > div{
+	    	padding: 110px 0 0;
+	    }	 
+	       &:hover{
+		   padding: 32px;
+		   span{
+		   	top: -60px;
+		   }
+		   	> div{
+		   		opacity: 1;
+		   	}
+		  }
+	  }
+	}
+	@media (min-width:992px){
+		article{
+		height: 366px;
+		span{
+		       height: 40px;
+			h2{
+			  font-size: 28px;
+		       color: white;
+			}
+	    	 }
+	    > div{
+	    	padding: 160px 0 0;
+	    	a{
+	    		p{
+	    			font-size: 12px;
+	    		}
+	    	}
+	    }	 
+	       &:hover{
+		   padding: 32px;
+		   span{
+		   	top: -60px;
+		   }
+		   	> div{
+		   		opacity: 1;
+		   	}
+		  }
+	  }
+	}
+	@media (min-width:1440px){
+		article{
+		height: 575px;
+		span{
+		       height: 40px;
+			h2{
+			  font-size: 36px;
+		       color: white;
+			}
+	    	 }
+	    > div{
+	    	padding: 320px 0 0;
+	    	border: 2px solid $orange1; 
+	    	a{
+	    		opacity: 1;
+	    		p{
+	    			font-size: 16px;
+	    			display: inline;
+	    			margin-right: 9px;
+	    		}
+	    		i{
+	    			font-size: 22px;
+	    			transition: margin-left .4s;
+	    		}
+	    		 &:hover{
+                   opacity: 1;
+                   i{
+                   	margin-left: 9px;
+                   }
+	    		 }
+	    	}
+	    }	 
+	       &:hover{
+		   padding: 32px;
+		   span{
+		   	top: -60px;
+		   }
+		   	> div{
+		   		opacity: 1;
+		   	}
+		  }
+	  }
+	}
+}
+
+
+
+
+

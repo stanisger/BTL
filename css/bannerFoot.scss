@@ -1,7 +1,9 @@
 .bannerFoot{
-	.content{
+.content{
 	padding: 52px 0 52px;
-	@include content;
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
 	@include flexFlow;
 	
 	article{
@@ -17,13 +19,12 @@
 			font-size: 15px;
 			font-weight: 300;
 			line-height: 28px;
-			padding: 0 15%;
+			 padding: 0 15%;
 		}
 
 	}
 	article:nth-child(2){
 		width: 100%;
-
 		max-width: 420px;
 		margin: 30px auto 0;
 		@include flexFlow;
@@ -35,6 +36,59 @@
 			}
 		}
 
+	}
+	@media (min-width:768px){
+		article:nth-child(1){
+			width: 40%;
+			text-align: left;
+			h2{
+				padding: 0 15%;
+			}
+		}
+		article:nth-child(2){
+			width: 60%;
+		}
+	}
+	@media (min-width:992px){
+		article:nth-child(1){
+			h2{
+				font-size: 30px;
+			}
+			.text{
+				font-size: 19px;
+			}
+		}
+		article:nth-child(2){
+			max-width: 100%;
+			> div{
+				width: 16.6%;
+				padding: 10px 10px;
+			}
+		}
+
+	}
+	@media (min-width:1440px){
+		padding: 108px 0 108px;
+		article:nth-child(1){
+			h2{
+				font-size: 40px;
+				padding: 0 20px 0 0;
+				margin-bottom: 40px;
+			}
+			.text{
+				font-size: 22px;
+				padding: 0 90px 0 0;
+				line-height: 36px
+			}
+
+		}
+		article:nth-child(2){
+			> div{
+					width: 16.6%;
+					padding: 10px 25px;
+				}
+		}		
+      
 	}
   }
 }

@@ -75,6 +75,7 @@ nav{
 					     }
 					      @media (min-width: 1410px){
 								left: -44%;
+								transform: translatex(-74%);
 								padding: 33% 30% 0 64%;
 					      }
 
@@ -119,32 +120,34 @@ nav{
 					}
 				}
 				>li:last-child{
-					height: 40px;
-					margin-top: 13px; 
-					border-radius: 20px;
-					border: grey 1px solid;
+					height: 50px;
+					margin-top: 18px; 
+					border-radius: 4px;
+					border: $orange1 1px solid;
 					position: relative;
-					width: 111px;
+					width: 151px;
+					margin-right: 20px;
+					color: $orange1;
 					@include transitionBackground;
 					&:hover{
-						background: grey;
+						background: $orange1 ;
 						>a{
-							color: grey;
+							color: white;
 						    }
 					}
 					>a{
 						    border: 0;
 						    font-weight: 600;
-						    color: #000000;
+						    color: 	$orange1;
 						    position: absolute;
-						    top: -9px;
+						    top: -14px;
 						    right: 0;
 						    left: 0;
 						    margin: 0 auto;
 						    width: 70px;
 						 span{
 						 	transform: inherit;
-						 	color: #0f0920;
+						 	// color: #0f0920;
 						 }
 						i{
 						  position: absolute;
@@ -293,6 +296,9 @@ nav{
 		}	
 	 }
 }
+
+
+
 footer{
 	background: $black;
 	color: #b2b7c6;
@@ -321,7 +327,7 @@ footer{
 		}
 		ul {
 				    list-style: none;
-				    margin-bottom: 50	px;
+				    margin-bottom: 50px;
 				    width: 100%;
 				    max-width: 678px;
 				}
@@ -335,11 +341,23 @@ footer{
 				    	font-weight: 300;
 				    	margin-left: 25px;
 				    }
+				    @media (min-width:768px){
+				    	margin-bottom: 5px;
+							font-size: 11px;
+				    }
 				    @media (min-width:992px){
-                         font-size: 18px;
+                         font-size: 14px;
                          line-height: 22px;
-                         height: 45px;
+                         // height: 45px;
 					    }
+					     @media (min-width:1440px){
+					     	 font-size: 16px;
+					     	 line-height: 27px;
+					     	 font-weight: 200;
+					     	 a{
+					     	 	font-weight: 200;
+					     	 }
+					     }
 				}
 
 				li:before {
@@ -353,16 +371,27 @@ footer{
 		h4{
 				font-size: 24px;
 				font-weight: 100;
+				 @media (min-width:768px){
+				 	font-size: 18px;
+				 }
+				  @media (min-width:1440px){
+				  	font-size: 24px;
+				  }
 		}
 		>a{
 			color: $orange1;
 			font-size: 18px;
 			font-weight: 100;
+			@media (min-width:768px){
+				 	font-size: 14px;
+				 }
+				 @media (min-width:1440px){
+				 	font-size: 18px;
+				 }
 		}
 	}
 
-	article:nth-child(5),
-	article:nth-child(6){
+	article:nth-child(5){
 		width: 100%;
 		text-align: center;
 		span{
@@ -377,5 +406,119 @@ footer{
 			// display: block;
 		}
 	}
-}	
+ }	
+  @media (min-width:768px){
+   .content{
+   	max-width: 100%;
+   	article:nth-child(1),
+	article:nth-child(2),
+	article:nth-child(3),
+	article:nth-child(4){
+		width: 25%;
+		padding: 10px;
+		h3{
+			font-size: 14px;
+			margin-bottom: 11px;
+		}
+		.text{
+			color: #e7e7e7;
+			font-size: 11px;
+			font-weight: 300;
+		}
+	}
+	article:nth-child(5){
+		text-align: left;
+		span{
+			width: 50%;
+			float: left;
+			margin-top: 40px;
+			font-size: 13px;
+			br{
+				display: none;
+			}
+		}
+		img{
+			float: right;
+			width: 170px;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+	}
+
+   }
+  }
+  @media (min-width:992px){
+  	.content{
+	   	max-width: 100%;
+	   	article:nth-child(1),
+		article:nth-child(2),
+		article:nth-child(3),
+		article:nth-child(4){
+			width: 25%;
+			padding: 10px;
+			h3{
+				font-size: 18px;
+				margin-bottom: 29px;
+			}
+			.text{
+				color: #e7e7e7;
+				font-size: 14px;
+				font-weight: 300;
+
+			}
+		}
+	  }
+
+  }
+  @media (min-width:1440px){
+    padding: 170px 24px 90px;
+    .content{
+	   	max-width: 1640px;
+	   	article:nth-child(1),
+		article:nth-child(2),
+		article:nth-child(3),
+		article:nth-child(4){
+			width: 25%;
+			padding: 10px;
+			h3{
+				font-size: 26px;
+				margin-bottom: 60px;
+			}
+			.text{
+				color: #e7e7e7;
+				font-size: 16px;
+				line-height: 29px;
+				font-weight: 200;
+				br{
+					display: none;
+				}
+			}
+		}
+	   	article:nth-child(1){
+	   		width: 30%;
+	   		padding-right: 25px;
+	   	}
+	   	article:nth-child(3){
+	   		padding-right: 80px;
+	   	}
+	   	article:nth-child(4){
+	   		width: 20%;
+	   	}
+	   	article:nth-child(5){
+		text-align: left;
+			span{
+				width: 50%;
+				float: left;
+			}
+			img{
+				float: right;
+				width: 250px;
+				margin-top: 10px;
+				margin-left: 40px;
+			}
+		}
+	  }
+
+
+  }
 }

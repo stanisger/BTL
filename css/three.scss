@@ -322,4 +322,11 @@
 	       		  line-height: 30px;
 	       	}
        }
+       @media (min-width:1440px){
+       	padding: 130px 0 0;
+       	.text{
+	       		  margin-bottom: 110px;
+	       		   padding: 0 25%;
+	       		}
+       }
 }
