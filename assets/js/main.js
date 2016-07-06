@@ -159,4 +159,4 @@ function scrollContent(direction) {
  
    new WOW().init();
 
-};
+});
