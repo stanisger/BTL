@@ -232,7 +232,9 @@ xtab-filter
   top: 0;
   left: 0;
   background-color: #ffffff;
-  box-shadow: inset 0 -2px 0 #41307c;
+  border-radius: 4px;
+  border: 1px solid $orange1;
+  padding: 0 18px;
 }
 .cd-tab-filter li {
   display: none;
@@ -243,15 +245,16 @@ xtab-filter
 }
 .cd-tab-filter a {
   display: block;
-  /* set same size of the .cd-tab-filter */
+  color: black;
   height: 50px;
   width: 100%;
   line-height: 50px;
+  padding-left: 18px;
 /*  padding-left: 14px;*/
 }
 .cd-tab-filter a.selected {
-  background: #41307c;
-  color: #ffffff;
+  background: $grayLight;
+  color: $blueTitle;
 }
 .cd-tab-filter.is-open::after {
   /* small arrow rotation */
@@ -398,5 +401,68 @@ xgallery
     /* reduce width when filter is visible */
     width: 80%;
   }
+}
+
+
+
+.filtr-item {
+    padding: 1rem;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+.simplefilter li {
+    background-color: #585858;
+}
+.simplefilter li.active {
+    background-color: #212121;
+}
+.multifilter li {
+    background-color: #4b9eff;
+}
+.multifilter li.active {
+    background-color: #2265b4;
+}
+
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+.sortandshuffle .shuffle-btn {
+    background-color: #dec800;
+}
+.sortandshuffle .sort-btn {
+    background-color: #de0000;
+}
+.sortandshuffle .sort-btn.active {
+    background-color: #9d0000;
+}
+
+/* Search control */
+.search-row {
+    margin-left: 2.5rem;
+}
+.filtr-search {
+    padding: 0.5rem;
+    text-transform: uppercase;
 }
 

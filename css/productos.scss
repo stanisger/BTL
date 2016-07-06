@@ -1,0 +1,22 @@
+.product3columns{
+		padding: 50px 10px;
+		.tabs{
+			li.tab{
+				background: $grayLight;
+				transition: background .4s;
+				&:hover{
+					background: #f4b282;
+				}
+				a{
+					padding-top: 9px;
+					color: $blueTitle;
+				}	
+			}
+			.active{
+				background: $orange1;
+				
+					color: white !important;
+              
+			}
+		}
+	}

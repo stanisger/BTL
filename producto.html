@@ -111,90 +111,144 @@ consectetuer adipiscing elit.commodo ligula eget dolor. Aenean massa. Lorem ipsu
     </ul>
   </article>
 </section>
-<section class="prodicto3columns">
+<section class="product3columns">
    <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab blue col s6"><a class="active" href="#test1">Test 1</a></li>
-        <li class="tab red col s6"><a  href="#test2">Test 2</a></li>
+        <li class="tab col s6 waves-light waves-effect"><a class="active" href="#test1">MS</a></li>
+        <li class="tab  col s6 waves-light waves-effect"><a  href="#test2">CHOI II</a></li>
       </ul>
     </div>
     <div id="test1" class="col s12">
-    <div class="cd-main-content blue ">
-        <div class="cd-tab-filter-wrapper">
-          <div class="cd-tab-filter">
-            <ul class="cd-filters">
-              <li class="placeholder"> 
-              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li> 
-              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-              <li class="filter" data-filter=".ger"><a href="#0" data-type="color-1">Color 1</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
-              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Color 3</a></li>
-            </ul> <!-- cd-filters -->
-          </div> <!-- cd-tab-filter -->
-        </div> <!-- cd-tab-filter-wrapper -->
+      <div class="container">
+        <!-- Filter Controls - Simple Mode -->
+        <div class="row">
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+            <ul class="simplefilter">
+                Simple filter controls:
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Cityscape</li>
+                <li data-filter="2">Landscape</li>
+                <li data-filter="3">Industrial</li>
+                <li data-filter="4">Daylight</li>
+                <li data-filter="5">Nightscape</li>
+            </ul>
 
-        <section class="cd-gallery">
-          <ul>
-            <li class="mix ger">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-1.jpg" alt="Image 1"></li>
+        </div>
 
-            <li class="mix ger">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-2.jpg" alt="Image 2"></li>
-            <li class="mix color-1">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-3.jpg" alt="Image 3"></li>
-            <li class="mix color-1">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-4.jpg" alt="Image 4"></li>
-          </ul>
-          <div class="cd-fail-message">No results found</div>
-        </section> <!-- cd-gallery -->
-      </div> <!-- cd-main-content -->
-  
+        <!-- Filter Controls - Multifilter Mode -->
+    
+        <div class="row">
+            <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+            attribute, which starts from the value 1 and goes up from there -->
+            <div class="filtr-container">
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
+                    <img class="img-responsive" src="img/city_1.jpg" alt="sample image">
+                    <span class="item-desc">Busy Streets</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+                    <img class="img-responsive" src="img/nature_2.jpg" alt="sample image">
+                    <span class="item-desc">Luminous night</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+                    <img class="img-responsive" src="img/city_3.jpg" alt="sample image">
+                    <span class="item-desc">city wonders</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+                    <img class="img-responsive" src="img/industrial_1.jpg" alt="sample image">
+                    <span class="item-desc">in production</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+                    <img class="img-responsive" src="img/industrial_2.jpg" alt="sample image">
+                    <span class="item-desc">industrial site</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="img/nature_1.jpg" alt="sample image">
+                    <span class="item-desc">peaceful lake</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+                    <img class="img-responsive" src="img/city_2.jpg" alt="sample image">
+                    <span class="item-desc">city lights</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="img/nature_3.jpg" alt="sample image">
+                    <span class="item-desc">dreamhouse</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+                    <img class="img-responsive" src="img/industrial_3.jpg" alt="sample image">
+                    <span class="item-desc">restless machines</span>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div id="test2" class="col s12">
-      <div class="cd-main-content red ">
-        <div class="cd-tab-filter-wrapper">
-          <div class="cd-tab-filter">
-            <ul class="cd-filters">
-              <li class="placeholder"> 
-              <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li> 
-              <li class="filter"><a class="selected" href="#0" data-type="all">All2</a></li>
-              <li class="filter" data-filter=".ger"><a href="#0" data-type="color-1">Color 1</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
-              <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Color 3</a></li>
-            </ul> <!-- cd-filters -->
-          </div> <!-- cd-tab-filter -->
-        </div> <!-- cd-tab-filter-wrapper -->
+      <div class="container">
+        <!-- Filter Controls - Simple Mode -->
+        <div class="row">
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+            <ul class="simplefilter">
+                Simple filter controls:
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Cityscape</li>
+                <li data-filter="2">Landscape</li>
+                <li data-filter="3">Industrial</li>
+                <li data-filter="4">Daylight</li>
+                <li data-filter="5">Nightscape</li>
+            </ul>
 
-        <section class="cd-gallery">
-          <ul>
-            <li class="mix ger">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-1.jpg" alt="Image 1"></li>
+        </div>
 
-            <li class="mix ger">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-2.jpg" alt="Image 2"></li>
-            <li class="mix color-1">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-3.jpg" alt="Image 3"></li>
-            <li class="mix color-1">
-            <h1>jdjdjdj</h1>
-            <img src="img/img-4.jpg" alt="Image 4"></li>
-          </ul>
-          <div class="cd-fail-message">No results found</div>
-        </section> <!-- cd-gallery -->
-      </div> <!-- cd-main-content -->
+        <!-- Filter Controls - Multifilter Mode -->
+    
+        <div class="row">
+            <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+            attribute, which starts from the value 1 and goes up from there -->
+            <div class="filtr-container">
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
+                    <img class="img-responsive" src="img/city_1.jpg" alt="sample image">
+                    <span class="item-desc">Busy Streets</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+                    <img class="img-responsive" src="img/nature_2.jpg" alt="sample image">
+                    <span class="item-desc">Luminous night</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+                    <img class="img-responsive" src="img/city_3.jpg" alt="sample image">
+                    <span class="item-desc">city wonders</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+                    <img class="img-responsive" src="img/industrial_1.jpg" alt="sample image">
+                    <span class="item-desc">in production</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+                    <img class="img-responsive" src="img/industrial_2.jpg" alt="sample image">
+                    <span class="item-desc">industrial site</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="img/nature_1.jpg" alt="sample image">
+                    <span class="item-desc">peaceful lake</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+                    <img class="img-responsive" src="img/city_2.jpg" alt="sample image">
+                    <span class="item-desc">city lights</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="img/nature_3.jpg" alt="sample image">
+                    <span class="item-desc">dreamhouse</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+                    <img class="img-responsive" src="img/industrial_3.jpg" alt="sample image">
+                    <span class="item-desc">restless machines</span>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
   </div>        
 </section>
-
 <footer>
   <div class="content">
     <article>
@@ -236,5 +290,12 @@ consectetuer adipiscing elit.commodo ligula eget dolor. Aenean massa. Lorem ipsu
 <script src="assets/js/main.js"></script> 
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/wow.js"></script>
-<script src="assets/js/jquery.mixitup.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/controls.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
 </html>
