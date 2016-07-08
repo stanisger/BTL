@@ -428,7 +428,17 @@ change "brown" to something of your choosing
 
 nav {
   background: #edf2f7;
-  height: 80px; }
+  height: 80px;
+  position: relative; }
+  nav aside {
+    position: absolute;
+    right: 72px; }
+    nav aside a {
+      font-size: 12px;
+      color: #323232;
+      font-weight: 100; }
+    nav aside .activeLenguaje {
+      font-weight: 500; }
   nav > div > a:nth-child(1) {
     margin: 20px 0 0 18px;
     width: 180px;
@@ -441,16 +451,17 @@ nav {
     margin: 11px 18px 0 0; }
     nav > div > a:nth-child(2) i {
       font-size: 34px; }
-  nav > div > ul:nth-child(3) {
-    height: 80px;
+  nav > div > ul:nth-child(4) {
+    margin-top: 37px;
+    height: 90px;
     position: relative; }
-    nav > div > ul:nth-child(3) > li {
+    nav > div > ul:nth-child(4) > li {
       padding: 0 32px;
       transition: border .4s;
       height: 100%; }
-      nav > div > ul:nth-child(3) > li:hover {
+      nav > div > ul:nth-child(4) > li:hover {
         background: #f8f8f8; }
-      nav > div > ul:nth-child(3) > li > a {
+      nav > div > ul:nth-child(4) > li > a {
         border: 0;
         display: inline-block;
         height: 100%;
@@ -459,12 +470,12 @@ nav {
         color: #000;
         transition: color .4s;
         transition: font-size .4s; }
-        nav > div > ul:nth-child(3) > li > a:hover {
+        nav > div > ul:nth-child(4) > li > a:hover {
           background: transparent; }
         @media (min-width: 1140px) {
-          nav > div > ul:nth-child(3) > li > a {
+          nav > div > ul:nth-child(4) > li > a {
             font-size: 14px; } }
-      nav > div > ul:nth-child(3) > li > ul {
+      nav > div > ul:nth-child(4) > li > ul {
         padding: 0;
         margin: 0;
         z-index: 9;
@@ -474,35 +485,40 @@ nav {
         position: absolute;
         width: 110vw;
         border-radius: 0;
-        padding: 33% 30%;
+        padding: 23% 30%;
         left: 0%;
         float: inherit;
-        transform: translatex(-70%);
+        transform: translatex(-57%);
         height: 294px;
         -webkit-box-shadow: none;
         box-shadow: none;
         transition: opacity .4s; }
         @media (min-width: 1140px) {
-          nav > div > ul:nth-child(3) > li > ul {
-            left: -14%; } }
+          nav > div > ul:nth-child(4) > li > ul {
+            left: -14%;
+            padding: 17% 20% 0 54%; } }
         @media (min-width: 1340px) {
-          nav > div > ul:nth-child(3) > li > ul {
-            left: -24%;
-            padding: 33% 30% 0 54%; } }
+          nav > div > ul:nth-child(4) > li > ul {
+            left: -24%; } }
         @media (min-width: 1410px) {
-          nav > div > ul:nth-child(3) > li > ul {
+          nav > div > ul:nth-child(4) > li > ul {
             left: -44%;
-            transform: translatex(-74%);
-            padding: 33% 30% 0 64%; } }
-        nav > div > ul:nth-child(3) > li > ul > li {
+            transform: translatex(-55%);
+            padding: 17% 30% 0 54%; } }
+        @media (min-width: 1650px) {
+          nav > div > ul:nth-child(4) > li > ul {
+            left: -44%;
+            transform: translatex(-60%);
+            padding: 17% 30% 0 54%; } }
+        nav > div > ul:nth-child(4) > li > ul > li {
           display: inline-block;
           float: inherit;
           padding-right: 36px;
           width: 33%; }
           @media (min-width: 1410px) {
-            nav > div > ul:nth-child(3) > li > ul > li {
+            nav > div > ul:nth-child(4) > li > ul > li {
               width: 27%; } }
-          nav > div > ul:nth-child(3) > li > ul > li a {
+          nav > div > ul:nth-child(4) > li > ul > li a {
             padding: 0 10% 0 0;
             font-size: 14px;
             text-transform: uppercase;
@@ -512,22 +528,22 @@ nav {
             display: block;
             margin-bottom: 27px;
             transition: color .4s; }
-            nav > div > ul:nth-child(3) > li > ul > li a:hover {
+            nav > div > ul:nth-child(4) > li > ul > li a:hover {
               background: transparent;
               color: #eb721c; }
             @media (min-width: 1140px) {
-              nav > div > ul:nth-child(3) > li > ul > li a {
+              nav > div > ul:nth-child(4) > li > ul > li a {
                 font-size: 18px; } }
-          nav > div > ul:nth-child(3) > li > ul > li i {
+          nav > div > ul:nth-child(4) > li > ul > li i {
             color: #5b5b5b;
             font-weight: 300;
             font-size: 13px;
             line-height: 22px;
             padding-right: 10px; }
             @media (min-width: 1140px) {
-              nav > div > ul:nth-child(3) > li > ul > li i {
+              nav > div > ul:nth-child(4) > li > ul > li i {
                 padding-right: 150px; } }
-    nav > div > ul:nth-child(3) > li:last-child {
+    nav > div > ul:nth-child(4) > li:last-child {
       height: 50px;
       margin-top: 18px;
       border-radius: 4px;
@@ -537,11 +553,11 @@ nav {
       margin-right: 20px;
       color: #eb721c;
       transition: background .4s; }
-      nav > div > ul:nth-child(3) > li:last-child:hover {
+      nav > div > ul:nth-child(4) > li:last-child:hover {
         background: #eb721c; }
-        nav > div > ul:nth-child(3) > li:last-child:hover > a {
+        nav > div > ul:nth-child(4) > li:last-child:hover > a {
           color: white; }
-      nav > div > ul:nth-child(3) > li:last-child > a {
+      nav > div > ul:nth-child(4) > li:last-child > a {
         border: 0;
         font-weight: 600;
         color: #eb721c;
@@ -551,48 +567,48 @@ nav {
         left: 0;
         margin: 0 auto;
         width: 70px; }
-        nav > div > ul:nth-child(3) > li:last-child > a span {
+        nav > div > ul:nth-child(4) > li:last-child > a span {
           transform: inherit; }
-        nav > div > ul:nth-child(3) > li:last-child > a i {
+        nav > div > ul:nth-child(4) > li:last-child > a i {
           position: absolute;
           left: -10px;
           color: grey;
           font-weight: 100;
           font-size: 20px;
           top: -1px; }
-  nav > div > ul:nth-child(4) {
+  nav > div > ul:nth-child(5) {
     height: 100vh;
     background: #edf2f7;
     padding: 22px  0; }
-    nav > div > ul:nth-child(4) > li {
+    nav > div > ul:nth-child(5) > li {
       display: inline-block;
       width: 100%;
       transition: all .4s;
       line-height: 60px;
       padding: 0 18px; }
-      nav > div > ul:nth-child(4) > li > a {
+      nav > div > ul:nth-child(5) > li > a {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         font-size: 11px;
         color: #000000;
         font-weight: 600;
         height: 100%; }
-      nav > div > ul:nth-child(4) > li a.sub {
+      nav > div > ul:nth-child(5) > li a.sub {
         background: url(assets/images/icon1.png) right center;
         background-repeat: no-repeat; }
-      nav > div > ul:nth-child(4) > li:hover {
+      nav > div > ul:nth-child(5) > li:hover {
         background-color: #dce2e8; }
-        nav > div > ul:nth-child(4) > li:hover > a {
+        nav > div > ul:nth-child(5) > li:hover > a {
           color: #3d4b5f;
           font-size: 11px;
           background-color: transparent; }
-      nav > div > ul:nth-child(4) > li ul {
+      nav > div > ul:nth-child(5) > li ul {
         display: none;
         border: 0;
         box-shadow: none;
         position: inherit;
         width: 100%;
         background: transparent; }
-        nav > div > ul:nth-child(4) > li ul li a {
+        nav > div > ul:nth-child(5) > li ul li a {
           color: #3d4b5f;
           font-size: 11px;
           font-weight: 400;
@@ -600,10 +616,10 @@ nav {
           padding: 0;
           margin: 0;
           height: auto; }
-          nav > div > ul:nth-child(4) > li ul li a:hover {
+          nav > div > ul:nth-child(5) > li ul li a:hover {
             background: transparent;
             color: grey; }
-    nav > div > ul:nth-child(4) > li:first-child {
+    nav > div > ul:nth-child(5) > li:first-child {
       border: 1px solid #eb721c;
       margin-bottom: 24px;
       margin-left: 18px;
@@ -611,18 +627,19 @@ nav {
       border-radius: 4px;
       width: 113px;
       line-height: 55px; }
-      nav > div > ul:nth-child(4) > li:first-child:hover {
+      nav > div > ul:nth-child(5) > li:first-child:hover {
         background: #3d4b5f;
         border: 1px solid #3d4b5f; }
-        nav > div > ul:nth-child(4) > li:first-child:hover > a {
+        nav > div > ul:nth-child(5) > li:first-child:hover > a {
           color: white; }
-      nav > div > ul:nth-child(4) > li:first-child > a {
+      nav > div > ul:nth-child(5) > li:first-child > a {
         border: 0;
         font-weight: 500;
         color: #eb721c; }
   @media (min-width: 992px) {
     nav {
-      background: #fcfcfc; } }
+      background: #fcfcfc;
+      height: 130px; } }
 
 .btns button {
   height: 40px;
@@ -987,9 +1004,9 @@ footer {
           margin: 12px; } }
   @media (min-width: 1440px) {
     .slider {
-      height: 800px; }
+      height: 100vh; }
       .slider ul:nth-child(1) {
-        height: 800px; }
+        height: 100vh; }
         .slider ul:nth-child(1) li > div {
           top: 36%;
           left: 7%;
@@ -2056,6 +2073,9 @@ xtab-filter
   width: 100%;
   margin: 0 auto;
   z-index: 1; }
+  @media (min-width: 768px) {
+    .cd-tab-filter {
+      height: 60px; } }
 
 .cd-tab-filter::after {
   /* small arrow icon */
@@ -2087,6 +2107,9 @@ xtab-filter
   border-radius: 4px;
   border: 1px solid #eb721c;
   padding: 0 18px; }
+  @media (min-width: 768px) {
+    .cd-tab-filter ul {
+      border: 0; } }
 
 .cd-tab-filter li {
   display: none; }
@@ -2098,9 +2121,9 @@ xtab-filter
 .cd-tab-filter a {
   display: block;
   color: black;
-  height: 50px;
+  height: auto;
   width: 100%;
-  line-height: 50px;
+  line-height: 30px;
   padding-left: 18px;
   /*  padding-left: 14px;*/ }
 
@@ -2146,28 +2169,37 @@ xtab-filter
     text-align: center; }
 
   .cd-tab-filter li {
-    display: inline-block; }
+    display: inline-block;
+    border-right: 1px solid rgba(61, 75, 95, 0.3); }
+
+  .cd-tab-filter li:last-child {
+    border: none; }
 
   .cd-tab-filter li.placeholder {
     display: none !important; }
 
   .cd-tab-filter a {
     display: inline-block;
-    padding: 0 1em;
+    padding: 0 1rem;
     width: auto;
-    color: #9a9a9a;
+    color: #3d4b5f;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.3rem; }
+    font-weight: 300;
+    font-size: 12px; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+    .cd-tab-filter a {
+      font-size: 16px;
+      padding: 0 1.8rem; } }
 
+@media only screen and (min-width: 768px) {
   .no-touch .cd-tab-filter a:hover {
-    color: #41307c; }
+    color: #eb721c; }
 
   .cd-tab-filter a.selected {
     background: transparent;
-    color: #41307c;
+    color: #eb721c;
     /* create border bottom using box-shadow property */
-    box-shadow: inset 0 -2px 0 #41307c; }
+    box-shadow: inset 0 -2px 0 #eb721c; }
 
   .cd-tab-filter.is-open ul li {
     display: inline-block; } }
@@ -2305,17 +2337,181 @@ select {
 
 .product3columns {
   padding: 50px 10px; }
-  .product3columns .tabs li.tab {
-    background: #edf2f7;
-    transition: background .4s; }
-    .product3columns .tabs li.tab:hover {
-      background: #f4b282; }
-    .product3columns .tabs li.tab a {
-      padding-top: 9px;
-      color: #3d4b5f; }
-  .product3columns .tabs .active {
-    background: #eb721c;
-    color: white !important; }
+  .product3columns .tabs {
+    width: 100%; }
+    @media (min-width: 601px) {
+      .product3columns .tabs {
+        width: 90% !important;
+        margin: 0 auto; } }
+    @media (min-width: 992px) {
+      .product3columns .tabs {
+        width: 71% !important;
+        margin: 0 auto;
+        height: 50px; }
+        .product3columns .tabs li.tab {
+          height: 50px; } }
+    .product3columns .tabs li.tab {
+      background: #edf2f7;
+      transition: background .4s; }
+      .product3columns .tabs li.tab:hover {
+        background: #f4b282; }
+      .product3columns .tabs li.tab a {
+        padding-top: 9px;
+        color: #3d4b5f;
+        font-size: 14px; }
+      @media (min-width: 992px) {
+        .product3columns .tabs li.tab a {
+          font-size: 20px;
+          padding-top: 11px; } }
+    .product3columns .tabs .active {
+      background: #eb721c;
+      color: white !important; }
+  .product3columns .cd-tab-filter .cd-filters {
+    background: url(assets/images/arrows.png) right center;
+    background-repeat: no-repeat;
+    background-color: white; }
+    @media (min-width: 768px) {
+      .product3columns .cd-tab-filter .cd-filters {
+        background: none; } }
+  .product3columns .contentProduct .container {
+    padding-top: 10px; }
+  .product3columns .contentProduct .btns {
+    width: 100%;
+    text-align: center; }
+    .product3columns .contentProduct .btns > button {
+      text-align: center; }
+    .product3columns .contentProduct .btns > button:nth-child(1) {
+      border: 2px solid #3d4b5f;
+      color: #3d4b5f;
+      background: white;
+      margin: 0 9px 0 0;
+      width: auto;
+      padding: 0 18px; }
+      .product3columns .contentProduct .btns > button:nth-child(1):hover {
+        background: #3d4b5f;
+        color: white; }
+      .product3columns .contentProduct .btns > button:nth-child(1) i {
+        margin-right: 9px; }
+    .product3columns .contentProduct .btns > button:nth-child(2) {
+      border: 2px solid #eb721c;
+      color: #eb721c;
+      color: white;
+      margin: 0 0 0 9px;
+      width: auto;
+      padding: 0 18px; }
+      .product3columns .contentProduct .btns > button:nth-child(2):hover {
+        background: #3d4b5f;
+        border: 2px solid #3d4b5f; }
+      .product3columns .contentProduct .btns > button:nth-child(2) i {
+        margin-right: 9px; }
+  .product3columns .contentProduct3columns .filtr-container {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .product3columns .contentProduct3columns .filtr-container > div {
+      width: 50%; }
+      .product3columns .contentProduct3columns .filtr-container > div img {
+        width: 100%; }
+      .product3columns .contentProduct3columns .filtr-container > div span {
+        display: inline-block;
+        height: 10px;
+        padding-top: 9px;
+        width: 100%;
+        text-align: center;
+        color: #3d4b5f;
+        background: white;
+        font-size: 16px; }
+        .product3columns .contentProduct3columns .filtr-container > div span strong {
+          font-weight: 200;
+          color: grey; }
+      @media (min-width: 768px) {
+        .product3columns .contentProduct3columns .filtr-container > div {
+          width: 33.3%; }
+          .product3columns .contentProduct3columns .filtr-container > div span {
+            height: 30px;
+            padding-top: 14px; } }
+      @media (min-width: 1200px) {
+        .product3columns .contentProduct3columns .filtr-container > div span {
+          height: 90px;
+          padding-top: 24px;
+          font-size: 20px; } }
+  .product3columns .contentProduct2columns .filtr-container {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .product3columns .contentProduct2columns .filtr-container > div {
+      width: 50%; }
+      .product3columns .contentProduct2columns .filtr-container > div img {
+        width: 100%; }
+      .product3columns .contentProduct2columns .filtr-container > div span {
+        display: inline-block;
+        height: 10px;
+        padding-top: 9px;
+        width: 100%;
+        text-align: center;
+        color: #3d4b5f;
+        background: white;
+        font-size: 16px; }
+        .product3columns .contentProduct2columns .filtr-container > div span strong {
+          font-weight: 200;
+          color: grey; }
+      @media (min-width: 768px) {
+        .product3columns .contentProduct2columns .filtr-container > div {
+          width: 50%; }
+          .product3columns .contentProduct2columns .filtr-container > div span {
+            height: 30px;
+            padding-top: 14px; } }
+      @media (min-width: 1200px) {
+        .product3columns .contentProduct2columns .filtr-container > div span {
+          height: 90px;
+          padding-top: 24px;
+          font-size: 20px; } }
+  .product3columns .contentProduct4columns .filtr-container {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .product3columns .contentProduct4columns .filtr-container > div {
+      width: 50%; }
+      .product3columns .contentProduct4columns .filtr-container > div img {
+        width: 100%; }
+      .product3columns .contentProduct4columns .filtr-container > div span {
+        display: inline-block;
+        height: 10px;
+        padding-top: 9px;
+        width: 100%;
+        text-align: center;
+        color: #3d4b5f;
+        background: white;
+        font-size: 16px; }
+        .product3columns .contentProduct4columns .filtr-container > div span strong {
+          font-weight: 200;
+          color: grey; }
+      @media (min-width: 768px) {
+        .product3columns .contentProduct4columns .filtr-container > div {
+          width: 25%; }
+          .product3columns .contentProduct4columns .filtr-container > div span {
+            height: 30px;
+            padding-top: 14px; } }
+      @media (min-width: 1200px) {
+        .product3columns .contentProduct4columns .filtr-container > div span {
+          height: 90px;
+          padding-top: 24px;
+          font-size: 20px; } }
+  @media (min-width: 1200px) {
+    .product3columns {
+      padding: 100px 10px; } }
 
 /*
   Flaticon icon font: Flaticon
@@ -2348,19 +2544,25 @@ select {
 .flaticon-gear:before {
   content: "\f103"; }
 
-.flaticon-menu-circular-button:before {
+.flaticon-mail:before {
   content: "\f104"; }
 
-.flaticon-mouse:before {
+.flaticon-menu-circular-button:before {
   content: "\f105"; }
 
-.flaticon-next:before {
+.flaticon-mouse:before {
   content: "\f106"; }
 
-.flaticon-rounded-add-button:before {
+.flaticon-next:before {
   content: "\f107"; }
 
-.flaticon-signs:before {
+.flaticon-rounded-add-button:before {
   content: "\f108"; }
+
+.flaticon-signs:before {
+  content: "\f109"; }
+
+.flaticon-symbol:before {
+  content: "\f10a"; }
 
 /*# sourceMappingURL=style.css.map */

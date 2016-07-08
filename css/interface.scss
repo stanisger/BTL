@@ -1,6 +1,20 @@
 nav{
 	background: $grayLight;
 	height: 80px;
+	position: relative;
+	aside{
+		position: absolute;
+		right: 72px;
+		a{
+			font-size: 12px;
+			color: #323232;
+			font-weight: 100;
+		}
+	    .activeLenguaje{
+	    	font-weight: 500;
+	    }
+
+	}
 	>div{
 		>a:nth-child(1){
 			margin:20px 0 0 18px;
@@ -18,9 +32,9 @@ nav{
 				font-size: 34px;
 			}
 		}
-		>ul:nth-child(3){
-				// margin-top: 6px;
-				height: 80px;
+		>ul:nth-child(4){
+				margin-top: 37px;
+				height: 90px;
 				position: relative;
 				>li{
 					// height: 100%;
@@ -58,26 +72,32 @@ nav{
 						position: absolute;
 						width: 110vw;
 						border-radius:0;
-						padding: 33% 30%;
+						padding: 23% 30%;
 						left: 0%;
 						float: inherit;
-						transform: translatex(-70%);
+						transform: translatex(-57%);
 						height: 294px;
 						-webkit-box-shadow: none;
 						box-shadow: none;
 						transition: opacity .4s;
 					    @media (min-width: 1140px){
 					    	left: -14%;
+                          padding: 17% 20% 0 54%;
 					    }
 					     @media (min-width: 1340px){
                           left: -24%;
-                          padding: 33% 30% 0 54%;
 					     }
 					      @media (min-width: 1410px){
 								left: -44%;
-								transform: translatex(-74%);
-								padding: 33% 30% 0 64%;
+								transform: translatex(-55%);
+								padding: 17% 30% 0 54%;
 					      }
+					         @media (min-width: 1650px){
+					         	left: -44%;
+								transform: translatex(-60%);
+								padding: 17% 30% 0 54%;
+
+					         }
 
 						>li{
 							display: inline-block;
@@ -165,7 +185,7 @@ nav{
 				}
 				
 			}
-		>ul:nth-child(4){
+		>ul:nth-child(5){
 				height: 100vh;
 				background: $grayLight;
 				padding: 22px  0;
@@ -260,6 +280,7 @@ nav{
 	@media (min-width:768px){}
 	@media (min-width: 992px){
 		background: #fcfcfc;
+		height: 130px;
 	}
 	@media (min-width:1440px){}
 }

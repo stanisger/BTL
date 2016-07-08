@@ -7,23 +7,8 @@
   $(".button-collapse").sideNav();
 
 
-    $(document).ready(function(){
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-  });
   
 
-  // $('.dropdown-button').dropdown({
-  //     inDuration: 300,
-  //     outDuration: 225,
-  //     constrain_width: false, // Does not change width of dropdown to that of the activator
-  //     hover: false, // Activate on hover
-  //     gutter: 0, // Spacing from edge
-  //     belowOrigin: false, // Displays dropdown below the button
-  //     alignment: 'left' // Displays dropdown with edge aligned to the left of button
-  //   }
-  // );
 
   $(".drop").click(function (){
     $(".drop").not(this).parent('li').children(".dropdown-menu").removeClass('show');
@@ -36,16 +21,6 @@
 });
 
 
-
-
-//$('.button-collapse').sideNav('hide');
-  $(".drop").click(function () {
-        $( this ).children(".deg").toggleClass("rotate180");
-        //$( this ).toggleClass( "highlight" );        
-  });
-
-
- 
 var step = 320;
 var scrolling = false;
 
@@ -158,5 +133,58 @@ function scrollContent(direction) {
   })
  
    new WOW().init();
+
+    var showAll = function(filter){
+          $('.simplefilter-'+filter).trigger('click');
+          console.log('asd')
+        }
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container-1').filterizr();
+            $('.filtr-container-2').filterizr();
+
+            $('ul.tabs').children('li.tab').click(function(){
+              var filter = $(this).data('filter');
+              setTimeout(function(){showAll(filter);},100);
+            });
+        });
+  $('.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: ($($anchor.attr('href')).offset().top - 50)
+          }, 1250);
+          event.preventDefault();
+  });      
+
+  //mobile version - detect click event on filters tab
+  var filter_tab_placeholder = $('.cd-tab-filter .placeholder a'),
+    filter_tab_placeholder_default_value = 'Select',
+    filter_tab_placeholder_text = filter_tab_placeholder.text();
+  
+  $('.cd-tab-filter li').on('click', function(event){
+    //detect which tab filter item was selected
+    var selected_filter = $(event.target).data('type');
+      
+    //check if user has clicked the placeholder item
+    if( $(event.target).is(filter_tab_placeholder) ) {
+      (filter_tab_placeholder_default_value == filter_tab_placeholder.text()) ? filter_tab_placeholder.text(filter_tab_placeholder_text) : filter_tab_placeholder.text(filter_tab_placeholder_default_value) ;
+      $('.cd-tab-filter').toggleClass('is-open');
+
+    //check if user has clicked a filter already selected 
+    } else if( filter_tab_placeholder.data('type') == selected_filter ) {
+      filter_tab_placeholder.text($(event.target).text());
+      $('.cd-tab-filter').removeClass('is-open'); 
+
+    } else {
+      //close the dropdown and change placeholder text/data-type value
+      $('.cd-tab-filter').removeClass('is-open');
+      filter_tab_placeholder.text($(event.target).text()).data('type', selected_filter);
+      filter_tab_placeholder_text = $(event.target).text();
+      
+      //add class selected to the selected filter item
+      $('.cd-tab-filter .selected').removeClass('selected');
+      $(event.target).addClass('selected');
+    }
+  });
 
 });

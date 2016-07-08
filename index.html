@@ -14,44 +14,68 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#" >
-        <img src="assets/images/logo.png" alt="BTL-brilliant-mexico">
+  <a href="#" >
+    <img src="assets/images/logo.png" alt="BTL-brilliant-mexico">
+  </a>
+  <a href="#" data-activates="mobile-demo" class="button-collapse waves-effect"><i class="flaticon-menu-circular-button"></i></a>
+    <aside class="lenguaje">
+      <a id="esp"  href="#" class="activeLenguaje">ESP</a>
+      <a id="eng" href="#">ENG</a>
+    </aside>
+
+
+  <ul class="right hide-on-med-and-down">
+      <li class="dropdown ">
+      <a href="#"  class="drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ELEVADORES
+      <!--  <span class="deg flaticon-next"></span> -->
       </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse waves-effect"><i class="flaticon-menu-circular-button"></i></a>
+      <ul class="dropdown-menu">
+      <li><a  href="#">Taller Reescribe tu historia</a> 
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
+      </li>
+      <li><a href="#">Desarrolla tu Coeficiente Intelectual</a>
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
 
+      </li>
+      <li><a href="#">Sesiones Individuales</a>
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
 
-
-      <ul class="right hide-on-med-and-down">
-          <li class="dropdown ">
-          <a href="#"  class="drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ELEVADORES
-           <!--  <span class="deg flaticon-next"></span> -->
-          </a>
-          <ul class="dropdown-menu">
-            <li><a  href="#">Taller Reescribe tu historia</a> 
-              <i>Cambia tus pensamientos negativos por  
-               conversaciones internas poderosas.</i>
-            </li>
-            <li><a href="#">Desarrolla tu Coeficiente Intelectual</a>
-            <i>Cambia tus pensamientos negativos por  
-               conversaciones internas poderosas.</i>
-
-            </li>
-            <li><a href="#">Sesiones Individuales</a>
-                 <i>Cambia tus pensamientos negativos por  
-               conversaciones internas poderosas.</i>
-
-            </li>
-          </ul>
-        </li> 
-      
-         <li>
-           <a href="#">
-           <i class="flaticon-envelope"></i>
-              <span>CONTACTO</span>
-              
-            </a>
-          </li>
+      </li>
       </ul>
+    </li>
+    <li class="dropdown ">
+      <a href="#"  class="drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ELEVADORES
+      <!--  <span class="deg flaticon-next"></span> -->
+      </a>
+      <ul class="dropdown-menu">
+      <li><a  href="#">Taller Reescribe tu historia</a> 
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
+      </li>
+      <li><a href="#">Desarrolla tu Coeficiente Intelectual</a>
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
+
+      </li>
+      <li><a href="#">Sesiones Individuales</a>
+      <i>Cambia tus pensamientos negativos por  
+      conversaciones internas poderosas.</i>
+
+      </li>
+      </ul>
+    </li> 
+
+    <li>
+      <a href="#">
+      <i class="flaticon-envelope"></i>
+      <span>CONTACTO</span>
+
+      </a>
+    </li>
+  </ul>
 
 
 
@@ -85,13 +109,13 @@
     <ul class="slides">
       <li>
         <img src="assets/images/slide2.jpg"> <!-- random image -->
-        <div class="caption center-align">
+        <div class="caption center-align wow fadeInDown">
           <h3>LÍDER EN MANUFACTURA E INSTALACIÓN DE <strong>ELEVADORES</strong></h3>
           <h4>Somos especialistas en diseño, fabricación, comercialización, instalación y mantenimiento.</h4>
           <div class="btns">
             <button class="waves-light btn-floating waves-effect">CONOCE MÁS</button>
           </div>
-          <i class="flaticon-mouse"></i>
+          <i class="flaticon-mouse page-scroll" href="#2"></i>
         </div>
       </li>
       <li>
@@ -106,7 +130,7 @@
       </li>
     </ul>
   </section>
-   <section class="main">
+   <section class="main" id="2">
      <article class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".4s">
        <h1>ELEVADORES</h1>
        <div class="text">Los elevadores BTL cuentan con alta 
@@ -147,7 +171,7 @@
      </article>
      <article class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s"style=" background: url('assets/images/main.jpg') center;"></article>
   </section>
-  <section class="mainor">
+  <section class="mainor" >
      <article class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s">
        <h1>ESCALERAS <br>ELÉCTRICAS</h1>
        <div class="text"> Contamos con los estándares más altos de calidad. Nuestras escaleras están diseñadas y fabricadas bajo las normas europeas y asiáticas más exigentes.</div>
@@ -360,9 +384,11 @@
   </footer>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- <script src="assets/js/bootstrap.min.js"></script> -->
 <script src="assets/js/materialize.js"></script>
 <script src="assets/js/main.js"></script> 
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/wow.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.filterizr.js"></script>
+<script src="assets/js/controls.js"></script>
 </html>

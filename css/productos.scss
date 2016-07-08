@@ -1,6 +1,19 @@
 .product3columns{
 		padding: 50px 10px;
 		.tabs{
+			width: 100%;
+			@media (min-width:601px){
+				width: 90% !important;
+				margin: 0 auto;
+			}
+			@media (min-width:992px){
+				width: 71% !important;
+				margin: 0 auto;
+				height: 50px;
+				li.tab{
+					height: 50px;
+				}
+			}
 			li.tab{
 				background: $grayLight;
 				transition: background .4s;
@@ -10,7 +23,14 @@
 				a{
 					padding-top: 9px;
 					color: $blueTitle;
+					font-size: 14px
 				}	
+				@media (min-width:992px){
+                      a{
+                      	font-size: 20px;
+                      	padding-top: 11px;
+                      }
+				}
 			}
 			.active{
 				background: $orange1;
@@ -19,4 +39,199 @@
               
 			}
 		}
+
+		.cd-tab-filter{
+			.cd-filters{
+				background: url(assets/images/arrows.png) right center;
+				background-repeat: no-repeat;
+				background-color: white;
+				@media (min-width:768px){
+					background: none;
+				}
+			}
+		}
+		.contentProduct{
+			.container{
+				padding-top: 10px;
+			}
+			.btns{
+				width: 100%;
+				text-align: center;
+				> button{
+					text-align: center;
+				}
+				> button:nth-child(1){
+					border: 2px solid $blueTitle;
+					color: $blueTitle;
+					background: white;
+					 margin: 0 9px 0 0;
+					 width: auto;
+					 padding: 0 18px;
+					 &:hover{
+					 	background: $blueTitle;
+					 	color: white;
+
+					 }
+					 i{
+					 	margin-right: 9px;
+					 }
+				}
+				> button:nth-child(2){
+					border: 2px solid $orange1;
+					color: $orange1;
+					color: white;
+					 margin: 0 0 0 9px;
+					 width: auto;
+					 padding: 0 18px;
+					 &:hover{
+					 	background: $blueTitle;
+					 	border: 2px solid $blueTitle;
+					 }
+					 i{
+					 	margin-right: 9px;
+					 }
+				}
+			}
+		}
+		.contentProduct3columns{
+			.filtr-container{
+
+				@include flexFlow;
+				> div{
+					width: 50%;					
+					img{
+						width: 100%;
+					}
+					span{
+					    display: inline-block;
+					    height: 10px;
+					    padding-top: 9px;
+					    width: 100%;
+					    text-align: center;
+					    color: $blueTitle;
+					    background: white;
+					    font-size: 16px;
+					    strong{
+					    	font-weight: 200;
+					    	color: grey;
+					    }
+					    @media (min-width:601px){
+
+					    }
+					}
+					@media (min-width:768px){
+						width: 33.3%;	
+						span{
+							height: 30px;
+							padding-top: 14px;
+
+						}
+					}
+					@media (min-width:1200px){
+						span{
+						     height: 90px;
+							padding-top: 24px;
+							font-size: 20px;
+							}
+
+					}
+				}
+			}
+
+		}
+		.contentProduct2columns{
+			.filtr-container{
+
+				@include flexFlow;
+				> div{
+					width: 50%;					
+					img{
+						width: 100%;
+					}
+					span{
+					    display: inline-block;
+					    height: 10px;
+					    padding-top: 9px;
+					    width: 100%;
+					    text-align: center;
+					    color: $blueTitle;
+					    background: white;
+					    font-size: 16px;
+					    strong{
+					    	font-weight: 200;
+					    	color: grey;
+					    }
+					    @media (min-width:601px){
+
+					    }
+					}
+					@media (min-width:768px){
+						width: 50%;	
+						span{
+							height: 30px;
+							padding-top: 14px;
+
+						}
+					}
+					@media (min-width:1200px){
+						span{
+						     height: 90px;
+							padding-top: 24px;
+							font-size: 20px;
+							}
+
+					}
+				}
+			}
+
+		}
+		.contentProduct4columns{
+			.filtr-container{
+
+				@include flexFlow;
+				> div{
+					width: 50%;					
+					img{
+						width: 100%;
+					}
+					span{
+					    display: inline-block;
+					    height: 10px;
+					    padding-top: 9px;
+					    width: 100%;
+					    text-align: center;
+					    color: $blueTitle;
+					    background: white;
+					    font-size: 16px;
+					    strong{
+					    	font-weight: 200;
+					    	color: grey;
+					    }
+					    @media (min-width:601px){
+
+					    }
+					}
+					@media (min-width:768px){
+						width: 25%;	
+						span{
+							height: 30px;
+							padding-top: 14px;
+
+						}
+					}
+					@media (min-width:1200px){
+						span{
+						     height: 90px;
+							padding-top: 24px;
+							font-size: 20px;
+							}
+
+					}
+				}
+			}
+
+		}
+			@media (min-width:1200px){
+				padding: 100px 10px;
+			}
 	}

@@ -116,10 +116,10 @@
         	}
         }
 	   }
-	   @media (min-width:1440px){
-	   	    height: 800px;
+	   @media (min-width:1440px){ 
+	   	    height: 100vh;
 	   		ul:nth-child(1){
-	   			height: 800px;
+	   			height: 100vh;
 	   		li{
 	   			> div{
 	   				 
